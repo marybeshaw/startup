@@ -3,6 +3,15 @@ startup
 
 Node.js HTTP app runner
 
+This Fork
+---------
+Node 4 can use too much memory on a system such as Heroku unless specific flags are set.  This forked version allows unknown arguments to be passed into startup.
+
+Here is an example of a Procfile entry for a Heroku 2x dyno:
+```
+web: ./node_modules/.bin/startup start -w 1 --gc_global --optimize_for_size --max_old_space_size=960 --always_compact --max_executable_size=64 --gc_interval=100 --expose_gc
+```
+
 Features
 --------
 

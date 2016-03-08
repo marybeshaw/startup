@@ -28,7 +28,7 @@
     "node": ">=0.8.x"
   },
   "dependencies": {
-    "commander": "~1.1.1",
+    "commander": "~2.9.0",
     "cli-table": "~0.2.0",
     "node-uuid": "~1.4.0",
     "win-fork": "~1.1.1",
